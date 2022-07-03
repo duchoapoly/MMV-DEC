@@ -48,7 +48,7 @@ class MnistDataset(Dataset):
 
 class FashionMnistDataset(Dataset):
     def __init__(self):
-        fashion_dataset_tr = datasets.FashionMNIST('/home/hoatran/IDEC-MVAE/', train=True, 
+        fashion_dataset_tr = datasets.FashionMNIST('./MMV-DEC/data', train=True,
                                     transform=transforms.Compose([
                                     transforms.ToTensor(),
                                     ]), 
